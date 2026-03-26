@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 interface NewsItem {
   title: string;
@@ -87,7 +87,7 @@ export default function NewsSlider() {
     <div className="relative overflow-hidden">
       <div
         ref={containerRef}
-        className="flex gap-6 animate-scroll scrollbar-hide"
+        className="flex gap-5 animate-scroll scrollbar-hide"
         style={{ width: "max-content" }}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -98,19 +98,19 @@ export default function NewsSlider() {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 w-[400px] glass rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer"
+            className="flex-shrink-0 w-[380px] glass card-accent rounded-2xl p-6 group cursor-pointer"
           >
             <div className="flex items-center gap-2 mb-3">
-              <span className="px-3 py-1 text-xs font-medium bg-cyan-500/20 text-cyan-400 rounded-full">
+              <span className="px-3 py-1 text-xs font-medium bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full">
                 {item.source}
               </span>
-              <span className="text-sm text-gray-500">{item.date}</span>
+              <span className="text-xs text-neutral-600">{item.date}</span>
             </div>
-            <h3 className="text-lg font-semibold mb-2 group-hover:text-cyan-400 transition-colors">
+            <h3 className="text-base font-semibold mb-2 group-hover:text-orange-400 transition-colors leading-snug">
               {item.title}
             </h3>
-            <p className="text-sm text-gray-400 line-clamp-3">{item.excerpt}</p>
-            <div className="mt-4 flex items-center gap-1 text-cyan-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+            <p className="text-sm text-neutral-500 line-clamp-3 leading-relaxed">{item.excerpt}</p>
+            <div className="mt-4 flex items-center gap-1 text-orange-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
               Read more
               <svg
                 className="w-4 h-4"
@@ -129,8 +129,9 @@ export default function NewsSlider() {
           </a>
         ))}
       </div>
-      <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#030712] to-transparent pointer-events-none z-10" />
-      <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#030712] to-transparent pointer-events-none z-10" />
+      {/* Edge fades using new background color */}
+      <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none z-10" />
+      <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none z-10" />
     </div>
   );
 }
