@@ -572,14 +572,14 @@ function Possibilities() {
               qbit.zone is developing cutting-edge quantum algorithms. Join our waitlist to be
               among the first to access our platform.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+ {/*        <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-orange-500/20">
                 Get Early Access
               </button>
               <button className="px-8 py-4 rounded-xl font-semibold text-neutral-300 border border-white/10 hover:border-orange-500/30 hover:bg-white/5 transition-all duration-300">
                 Contact Us
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
