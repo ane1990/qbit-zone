@@ -569,8 +569,7 @@ function Possibilities() {
           <div className="glass rounded-2xl p-10 max-w-3xl mx-auto border-t border-orange-500/10">
             <h3 className="text-2xl font-bold mb-4 text-white">Ready to Build the Future?</h3>
             <p className="text-neutral-400 mb-8 leading-relaxed">
-              qbit.zone is developing cutting-edge quantum algorithms. Join our waitlist to be
-              among the first to access our platform.
+              qbit.zone is developing cutting-edge quantum algorithms. Website is under construction 🚧⏳🔄🔜
             </p>
  {/*        <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg shadow-orange-500/20">
